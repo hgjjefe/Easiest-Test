@@ -1,0 +1,20 @@
+.container{
+
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+}
+.container > * {
+    margin-top: 20px;
+
+}
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 15px; /* Optional: Add some spacing between the radio button and the label */
+  }
+button{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    transform: scale(1.5);
+}
