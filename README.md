@@ -17,3 +17,5 @@ Syllabus:
 - Linear homogeneous recurrence relations
 - Dihedral angle formula
 - Principle of inclusion-exclusion
+
+Time allowed: 2 hours 15 minutes 
