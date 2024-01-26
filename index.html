@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easiest Test</title>
     <link rel="stylesheet" href="style.css">
+    
     <script>
         MathJax = {
           loader: {load: ['input/asciimath', 'output/chtml']}
@@ -12,8 +13,40 @@
         </script>
          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
          <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+         
 </head>
 <body>
+    <p style="display:none"> 
+        \(\newcommand{\ang}{\angle}
+         \newcommand{\tri}{\triangle}
+         \renewcommand{\deg}{^\circ}\)
+    </p>
+<div id="page0" style="font-size: 20px;">
+    <div style="text-align: center; font-family: sans-serif">
+        
+        <h2>DAWN'S ACADEMY</h2>
+
+        <h2>INTELLIGENCE TEST 2023</h2>
+        <h1>MATHEMATICS &nbsp&nbsp B-Side</h1>
+        <h1>PAPER 2</h1>
+        <h3>Time allowed: 2 ¼ hours (135 minutes)</h3>
+    
+      </div>
+    <div style="margin-left: 40px;">
+        <b>INSTRUCTIONS</b>
+        <ol>
+            <li>After pressing the 'Start' button, a count-down timer will appear in the top right corner. When the timer reaches zero, the test will be automatically sumbitted.</li><br>
+            <li>The answers cannot be saved. If you exit the website during the test, you have to start over.</li><br>
+            <li>There are 45 questions in total. All question carry equal marks.</li><br>
+            <li><b>ANSWER ALL QUESTIONS.</b> To mark an answer, click on the circular radio button at the left of the choices of the question.</li><br>
+            <li>No marks will be deducted for wrong answers.</li>
+          </ol>
+    </div>
+    <div style="text-align: center; margin-right: 50px; margin-top: 30px;">
+        <button style="transform: scale(3);" onclick="start()">Start</button>
+    </div>
+</div>
+<div id="page1">
     <div class="container">
         <b>1.&nbsp</b> If \(\cfrac{3a+4b}{6a+7b}=\cfrac{5a+2b}{4a+9b}\) and \(a\neq b\) , then \(a=\)<br>
         <input type="radio" name="q1">\(\cfrac{4b-3}{b^2+2}\)<br>
@@ -93,9 +126,373 @@
         <input type="radio" name="q10" class="ans">The vertex of the graph is \((1,9)\) .<br>
         <input type="radio" name="q10">The \(y\)-intercept of the graph is \(-7\).<br>
     </div>
+    <br>
+    <button style="margin-right: 15px; width: 70px;" disabled>Previous</button> <button style="width: 70px;" onclick="next()">Next</button>
+</div>
 
-    <button onclick="submit()">Sumbit</button>
+<div id="page2">
+    <ol start="11">
+    <li><div class="container">
+        Marcy sells a vase and a bag for $\(S\) each. She gains \(x\%\) on the vase and loses \(x\%\) on the bag. After the two transactions, Marcy has a net loss of \(\$40\). If the profit of selling the vase is \(\$80\), find \(S\).<br>
+        <input type="radio" name="q11" class="ans">\(480\)<br>
+        <input type="radio" name="q11">\(450\)<br>
+        <input type="radio" name="q11">\(320\)<br>
+        <input type="radio" name="q11">\(240\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        The actual area of a park is 0.5625 km\(^2\) . If the area of the park on a map is 625cm\(^2\) , then the scale of the map is <br>
+        <input type="radio" name="q12">\(1:90\)<br>
+        <input type="radio" name="q12" class="ans">\(1:3\,000\)<br>
+        <input type="radio" name="q12">\(1:75\,000\)<br>
+        <input type="radio" name="q12">\(1:9\,000\,000\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        It is given that \(z\) partly varies directly as \(x^2\) and partly varies inversely as the cube root of \(y\) . When \(x=6\) and \(y=27\) , \(z=7\) . When \(x=15\) and \(y=125\) , \(z=-41\) . When \(x=21\) and \(y=729\) , \(z=\) <br>
+        <input type="radio" name="q13" class="ans">\(-93\)<br>
+        <input type="radio" name="q13">\(-45\)<br>
+        <input type="radio" name="q13">\(103\)<br>
+        <input type="radio" name="q13">\(125\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        Let \(a_n\) be the \(n\)th term of a sequence. If \(a_3=7\) , \(a_9=1393\)  and \(a_{n+2}=2a_{n+1}+a_n\) for any positive integer \(n\) , then \(a_6=\) <br>
+        <input type="radio" name="q14" class="ans">\(99\)<br>
+        <input type="radio" name="q14">\(143\)<br>
+        <input type="radio" name="q14">\(198\)<br>
+        <input type="radio" name="q14">\(237\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        A right pyramid has a height of \(h\) cm and a square base of side \(s\) cm. Its volume is 11200 cm\(^3\) and its total surface area is \(3920\) cm\(^2\) . If \(s>h\) , find \(s\) . <br>
+        <input type="radio" name="q15">\(15\)<br>
+        <input type="radio" name="q15">\(20\)<br>
+        <input type="radio" name="q15" class="ans">\(40\)<br>
+        <input type="radio" name="q15">\(42\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        In the figure, \(E\) is the centre of the circle \(ABCD\) , and \(BEDF\) is another circle. It is given that \(C\) and \(E\) lie on \(AF\) . Let \(G\) be the point of intersection of \(AF\) and \(BD\) . If \(BG=15\) cm , \(DG=8\) cm and \(\ang BGE=60\deg\) , find the area of the shaded region correct to the nearest cm\(^2\). <br>
+        <img src="images/q16.png" width="350px"><br>
+        <input type="radio" name="q16">\(320\) cm\(^2\)<br>
+        <input type="radio" name="q16" class="ans">\(341\) cm\(^2\)<br>
+        <input type="radio" name="q16">\(353\) cm\(^2\)<br>
+        <input type="radio" name="q16">\(399\) cm\(^2\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        In the figure, \(PQRS\) is a parallelogram. Let \(X\) be a point lying on \(PQ\) , and let \(M\) be the mid-point of \(SR\) . Let \(PR\) and \(SX\) intersect at \(Y\) , and \(PR\) and \(MX\) intersect at \(Z\) . If the area of quadrilateral \(SYZM\) and the area of quadrilateral \(QRZX\) are 648 cm\(^2\) and 1040 cm\(^2\) respectively, then the area of \(\tri SPY\) is <br>
+        <img src="images/q17.png" width="350px"><br>
+        <input type="radio" name="q17" class="ans">\(672\) cm\(^2\)<br>
+        <input type="radio" name="q17">\(720\) cm\(^2\)<br>
+        <input type="radio" name="q17">\(848\) cm\(^2\)<br>
+        <input type="radio" name="q17">\(936\) cm\(^2\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        According to the figure, which of the following must be true? <br>
+        <img src="images/q18.png" width="300px"><br>
+        <ol type="I" class="roman">
+            <li>\(\;a+b+c=270\deg\)</li>
+            <li>\(\;a+b+d=180\deg\)</li>
+            <li>\(\;2c-d=360\deg\)</li>
+        </ol>
+        <input type="radio" name="q18">I and II only<br>
+        <input type="radio" name="q18" class="ans">I and III only<br>
+        <input type="radio" name="q18">II and III only<br>
+        <input type="radio" name="q18">I, II and III<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        It is given that \(ABCD\) is a parallelogram. Denote the point of intersection of \(AC\) and $BD$ by \(E\). If \(\ang ABE=\ang CBE\) , then which of the following must be true? <br>
+        <ol type="I" class="roman">
+            <li>\(\ang BAE+\ang CDE=\ang BCE\)</li>
+            <li>\(AD^2=2AE^2\)</li>
+            <li>\(AC^2+BD^2=2(AB^2+BC^2)\)</li>
+        </ol>
+        <input type="radio" name="q19">II only<br>
+        <input type="radio" name="q19">III only<br>
+        <input type="radio" name="q19" class="ans">II and III only<br>
+        <input type="radio" name="q19">I, II and III<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        The figure shows the regular hexagon \(ABCDEP\) and the regular dodecagon \(EFGHIJKLMNOP\) . \(Q\) is a point on \(CI\) such that \(DQ\perp CI\) , and \(R\) is the mid-point of \(CP\) . Find \(\ang CQR\) . <br>
+        <img src="images/q20.png" width="300px"><br>
+        <input type="radio" name="q20">\(60\deg\)<br>
+        <input type="radio" name="q20">\(72\deg\)<br>
+        <input type="radio" name="q20" class="ans">\(75\deg\)<br>
+        <input type="radio" name="q20">\(78\deg\)<br>
+    </div></li>
+    <br>
 
+    </ol>
+    <button style="margin-right: 15px; width: 70px;" onclick="prev()">Previous</button> <button style="width: 70px;" onclick="next()">Next</button>
+</div>
+
+<div id="page3">
+    <ol start="21">
+    <li><div class="container">
+        In the figure, \(PQRS\) is a rectangle. Let \(U\) and \(T\) be points lying on \(SR\) and \(SP\) respectively such that \(\ang UTQ=90\deg\) , \(\ang TUS=\ang TUQ\) and \(\ang TQP=\ang TQU\) . Which of the following must be true? <br>
+        <img src="images/q21.png" width="300px"><br>
+        <ol type="I" class="roman">
+            <li>\(TU^2 = SU\cdot UQ\)</li>
+            <li>\(\tri UST \sim \tri QRU\)</li>
+            <li>\(ST=TP\)</li>
+        </ol>
+        <input type="radio" name="q21">I only<br>
+        <input type="radio" name="q21">II only<br>
+        <input type="radio" name="q21" class="ans">I and III only<br>
+        <input type="radio" name="q21">I, II and III<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        In the figure, \(RT\) is the diameter of the circle \(RSTU\) , and \(ST=TU\) . \(RS\) produced and \(UT\) produced meet at point \(V\) . If \(RT=1547\) cm and \(TV=845\) cm, then \(RV=\) <br>
+        <img src="images/q22.png" width="350px"><br>
+        <input type="radio" name="q22" class="ans">2028 cm<br>
+        <input type="radio" name="q22">2096 cm<br>
+        <input type="radio" name="q22">2147 cm<br>
+        <input type="radio" name="q22">2192 cm<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        In the figure, \(\tri ABC\) is a right-angled triangle with \(\ang ABC=90\deg\) . \(D\) and \(E\) are points lying on \(AB\) and \(BC\) respectively such that \(AE\) bisects \(\ang BAC\) and \(CD\) bisects \(\ang ACB\) . Find \(\cfrac{CE}{AD}\) . <br>
+        <img src="images/q23.png" width="350px"><br>
+        <input type="radio" name="q23">\(\cfrac{1+\tan\alpha}{1 - \tan\alpha}\)<br>
+        <input type="radio" name="q23">\(\cfrac{\tan\alpha(1+\tan^2 \alpha)}{1-\tan^2\alpha}\)<br>
+        <input type="radio" name="q23">\(\cfrac{2\sin\alpha\cos\alpha}{\cos^2\alpha - \sin^2\alpha}\)<br>
+        <input type="radio" name="q23" class="ans">\(\cfrac{\sin\alpha (\cos\alpha + \sin\alpha)}{\cos\alpha (\cos\alpha - \sin\alpha)}\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        The rectangular coordinates of the point \(P\) are \((-1, \,2+\sqrt{3})\) . \(P\) is rotated clockwise about the origin through \(45\deg\) and then reflected with respect to the \(x\)-axis. Find the \(y\)-coordinate of its image. <br>
+        <input type="radio" name="q24" class="ans">\(\cfrac{-\sqrt{2}-\sqrt{10}}{2}\)<br>
+        <input type="radio" name="q24">\(\cfrac{\sqrt{6}+2\sqrt{2}}{4}\)<br>
+        <input type="radio" name="q24">\(\cfrac{1-\sqrt{5}}{4}\)<br>
+        <input type="radio" name="q24">\(\cfrac{-\sqrt{6}-3\sqrt{2}}{2}\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        If \(a\) and \(b\) are integer constants such that the straight lines \((a+7)x+5y +9a-21=0\) and \((b+3)x-6y + 2b = 0\) are perpendicular to each other, and the \(y\)-coordinate of their intersection is 9, then the \(x\)-coordinate of their intersection is <br>
+        <input type="radio" name="q25">\(-4\)<br>
+        <input type="radio" name="q25" class="ans">\(4\)<br>
+        <input type="radio" name="q25">\(6\)<br>
+        <input type="radio" name="q25">\(9\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        The equations of the straight lines \(l\) and \(L\) are \(3x+4y-10=0\) and \(7x+24y-35=0\) respectively, and they intersect at the point \(E\). \(l\) cuts the \(y\)-axis at the point \(A\) while \(L\) cuts the \(x\)-axis at the point \(B\). Let \(P\) be a moving point in the rectangular coordinate plane such that the perpendicular distance from \(P\) to \(l\) is equal to the perpendicular distance from \(P\) to \(L\). Denote the locus of \(P\) by \(\Gamma\). Which of the following are true? <br>
+        <ol type="I" class="roman">
+            <li>The straight line \(66x+44y-185=0\) lies on \(\Gamma\).</li>
+            <li>\(AE=BE\) .</li>
+            <li>\(\Gamma\) passes through the mid-point of \(AB\).</li>
+        </ol>
+        <input type="radio" name="q26">I and II only<br>
+        <input type="radio" name="q26">I and III only<br>
+        <input type="radio" name="q26" class="ans">II and III only<br>
+        <input type="radio" name="q26">I, II and III<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        The equations of the circles \(C_1\) and \(C_2\) are \(x^2+y^2+8x+2y-128=0\) and \(3x^2+3y^2+66x-12y-756=0\) respectively. Let \(G_1\) and \(G_2\) be the centres of \(C_1\) and \(C_2\) respectively. Let \(A\) and \(B\) be the intersections of \(C_1\) and \(C_2\) respectively. Which of the following must be true? <br>
+        <ol type="I" class="roman">
+            <li>\(AB=G_1G_2\) .</li>
+            <li>The origin lies outside \(\tri G_1G_2A\) .</li>
+            <li>The area of \(\tri G_1G_2B\) is 29.</li>
+        </ol>
+        <input type="radio" name="q27" class="ans">I and II only<br>
+        <input type="radio" name="q27">I and III only<br>
+        <input type="radio" name="q27">II and III only<br>
+        <input type="radio" name="q27">I, II and III<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        A box contains four cards numbered 1, 2, 3 and 4 respectively while another box contains five cards numbered 5, 6, 7, 8 and 9   respectively. If two numbers are drawn without replacement from each box, find the probability that the sum of the four numbers drawn is divisible by 4. <br>
+        <input type="radio" name="q28">\(\cfrac{7}{30}\)<br>
+        <input type="radio" name="q28">\(\cfrac{1}{4}\)<br>
+        <input type="radio" name="q28" class="ans">\(\cfrac{4}{15}\)<br>
+        <input type="radio" name="q28">\(\cfrac{17}{60}\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        The box-and-whisker diagram below shows the distribution of the numbers of overtime hours of some engineers in a week. Find the interquartile range of the distribution. <br>
+        <img src="images/q29.png" width="500px"><br>
+        <input type="radio" name="q29">\(10\)<br>
+        <input type="radio" name="q29">\(20\)<br>
+        <input type="radio" name="q29" class="ans">\(25\)<br>
+        <input type="radio" name="q29">\(35\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        In a company, the salary of a part-time employee is \(\$6075\) while the salary of a full-time employee is \(\$8075\). Originally, the mean salary of all employees is \(\$7500\). After 8 part-time employees become full-time employees, the mean salary of all employees is increased by \(\$200\). Find the original number of part-time employees. <br>
+        <input type="radio" name="q30">\(15\)<br>
+        <input type="radio" name="q30" class="ans">\(23\)<br>
+        <input type="radio" name="q30">\(25\)<br>
+        <input type="radio" name="q30">\(33\)<br>
+    </div></li>
+    <br>
+
+    </ol>
+    <button style="margin-right: 15px; width: 70px;" onclick="prev()">Previous</button> <button style="width: 70px;" onclick="next()">Next</button>
+</div>
+
+<div id="page4">
+    <ol start="31">
+    <li><div class="container">
+        B00B1E5FEE1900D\(_{16}=\) <br>
+        <input type="radio" name="q31">\(721013\times 16^{10} + 942062 \times 16^{5} + 102414\)<br>
+        <input type="radio" name="q31">\(45067\times 16^{11} + 124414 \times 16^{5} + 102413\)<br>
+        <input type="radio" name="q31">\(16^{14} + 2846\times 16^8 + 392929\times 16^{4} + 36877\)<br>
+        <input type="radio" name="q31" class="ans">\(11\times 16^{14} + 2846\times 16^9 + 392929\times 16^{4} + 36877\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        The L.C.M. of &nbsp\(a^4b^2+ab^5\) , \(2a^4b + 4a^3b^2 + 2a^2b^3\) &nbsp and &nbsp \(3a^3b - 3a^2b^2+3ab^3\) &nbsp is <br>
+        <input type="radio" name="q32">\(ab(a+b)(a^2-ab+b^2)\)<br>
+        <input type="radio" name="q32">\(3ab^2(a-b)^2(a^2+ab+b^2)\)<br>
+        <input type="radio" name="q32" class="ans">\(6a^2b^2(a+b)^2(a^2-ab+b^2)\)<br>
+        <input type="radio" name="q32">\(6a^2b^2(a+b)(a^2-ab+b^2)\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        It is given that \(\log_8y\) is a linear function of \(\log_{32}x\). The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are \(8\) and \(3\) respectively. Which of the following must be true? <br>
+        <input type="radio" name="q33">\(x^8y^3 = 8^{24}\)<br>
+        <input type="radio" name="q33">\(x^8y^3 = 16^{30}\)<br>
+        <input type="radio" name="q33">\(x^3y^5 = 32^{15}\)<br>
+        <input type="radio" name="q33" class="ans">\(x^8y^5 = 64^{20}\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        Define \(z_1 = \cfrac{3}{1+ki}\) and \(z_2 = \cfrac{5}{i-2m}\), where \(k\) and \(m\) are real numbers. Find the maximum value of the imaginary part of \(z_1z_2\) . <br>
+        <input type="radio" name="q34" class="ans">\(\cfrac{15}{8}\)<br>
+        <input type="radio" name="q34">\(\cfrac{15}{4}\)<br>
+        <input type="radio" name="q34">\(\cfrac{45}{8}\)<br>
+        <input type="radio" name="q34">\(\cfrac{45}{4}\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        Let \(f(x)=5x^2 - 30mx + 12m^2\) , where \(m\) is a real constant. Which of the following statements about the graph of \(y=-\cfrac{1}{3}\,f(2x+7m)\) must be true? <br>
+        <ol type="I" class="roman">
+            <li>The \(y\)-coordinate of the vertex of the graph is \(11m^2\) .</li>
+            <li>The equation of the axis of symmetry of the graph is \(x-5m=0\) .</li>
+            <li>The area  of the triangle formed by the \(x\)-intercepts and the vertex of the graph is less than \(15m^3\).</li>
+        </ol>
+        <input type="radio" name="q35">I only<br>
+        <input type="radio" name="q35">II only<br>
+        <input type="radio" name="q35" class="ans">I and III only<br>
+        <input type="radio" name="q35">II and III only<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        Let \(S(n)\) be the sum of the first \(n\)th term of an arithmetic sequence. If \(S(16)=1112\) and \(S(34)-S(19)=4095\) , find the least value of \(k\) such that \(S(k)>6\times 10^7\). <br>
+        <input type="radio" name="q36">\(2686\)<br>
+        <input type="radio" name="q36">\(2687\)<br>
+        <input type="radio" name="q36">\(3304\)<br>
+        <input type="radio" name="q36" class="ans">\(3305\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        Consider the following system of inequalities: <br>
+        <br>
+        \(\begin{cases}
+    3x-7y+13\geq 0 \\
+    6x+5y+7\geq 0 \\
+    2x-5y-31 \leq 0 \\
+    7x+3y-47\leq 0
+    \end{cases}\) <br>
+    <br>
+    Let \(D\) be the region which represents the solution of the above system of inequalities. Find the constant \(k\) such the minimum value of \(8x+6y+k\) is \(13\) , where \((x,y)\) is a point lying in \(D\). <br>
+        <input type="radio" name="q37">\(-10\)<br>
+        <input type="radio" name="q37">\(6\)<br>
+        <input type="radio" name="q37">\(20\)<br>
+        <input type="radio" name="q37" class="ans">\(23\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        In the figure, \(PRS\) and \(QTR\) are circles that are externally tangent to each other at \(R\). It is given that \(PRT\) and \(QRS\) are straight lines, and \(PQ\) is the common tangent to the two circles. \(QS\) is produced to \(U\) and \(QP\) is produced to \(V\) such that \(UV\) is tangent to circle $PRS$ at \(W\). If \(UV=UQ\) and \(\ang WSR=96\deg\) , then \(\ang WUS=\) <br>
+        <img src="images/q38.png" width="300px"><br>
+        <input type="radio" name="q38">\(54\deg\)<br>
+        <input type="radio" name="q38">\(56\deg\)<br>
+        <input type="radio" name="q38">\(62\deg\)<br>
+        <input type="radio" name="q38" class="ans">\(68\deg\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        Find the range of values of \(c\) such that the circle \(x^2+y^2-4x+6y-12=0\) and the straight line \(cx-4y-21c+20=0\) intersect. <br>
+        <input type="radio" name="q39">\(c\leq \cfrac{3}{5}\) &nbsp or &nbsp \(c\geq \cfrac{20}{21}\)<br>
+        <input type="radio" name="q39">\(c\leq \cfrac{13}{21}\) &nbsp or &nbsp \(c\geq 3\)<br>
+        <input type="radio" name="q39">\(\cfrac{3}{5}\leq  c \leq \cfrac{20}{21}\)<br>
+        <input type="radio" name="q39" class="ans">\(\cfrac{13}{21}\leq c \leq 3\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        In tetrahedron \(ABCD\), \(BA:BC:BD=13:7:15\) and \(AC:AD:CD=9:7:10\) . Let \(\theta\) be the angle between \(\tri ABD\) and \(\tri CBD\). If \(AD=2BC\), then \(\cos\theta=\) <br>
+        <input type="radio" name="q40">\(-\cfrac{39}{70}\)<br>
+        <input type="radio" name="q40" class="ans">\(-\cfrac{79}{196}\)<br>
+        <input type="radio" name="q40">\(-\cfrac{53}{126}\)<br>
+        <input type="radio" name="q40">\(-\cfrac{39}{40}\)<br>
+    </div></li>
+    <br>
+
+    </ol>
+    <button style="margin-right: 15px; width: 70px;" onclick="prev()">Previous</button> <button style="width: 70px;" onclick="next()">Next</button>
+</div>
+
+<div id="page5">
+    <ol start="41">
+    <li><div class="container">
+        The equations of three sides of a triangle are \(20x-21y+33a=0\) , \(40x+9y+151a=0\) and \(y=a\) , where \(a\) is a constant. If the \(x\)-coordinate of the in-centre of the triangle is \(43\), then \(a=\) <br>
+        <input type="radio" name="q41">\(-51\)<br>
+        <input type="radio" name="q41" class="ans">\(-15\)<br>
+        <input type="radio" name="q41">\(8\)<br>
+        <input type="radio" name="q41">\(34\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        There are five couples in a shop. If all of these 10 people form a queue such that none of them stand next to their partners, how many different queues can be formed? <br>
+        <input type="radio" name="q42" class="ans">\(1\,263\,360\)<br>
+        <input type="radio" name="q42">\(1\,244\,600\)<br>
+        <input type="radio" name="q42">\(2\,365\,440\)<br>
+        <input type="radio" name="q42">\(3\,624\,960\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        Josh is playing a game. In each turn, he throws 3 six-sided fair dice at the same time, and he wins the turn only when the sum obtained is 12. If Josh plays 30 turns, find the probability that he wins more than 4 turns in total, correct to 4 decimal places. <br>
+        <input type="radio" name="q43">\(0.1615\)<br>
+        <input type="radio" name="q43" class="ans">\(0.2628\)<br>
+        <input type="radio" name="q43">\(0.3188\)<br>
+        <input type="radio" name="q43">\(0.5757\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        Peter finds that he got the same marks in two tests. In the first test, the mean and the standard deviation of the marks are 87 and 6 respectively. In the second test, the mean and the standard deviation of the marks are 80 and 4 respectively. If Peter's standard score in the second test is 2 more than his standard score in the first test, then his marks in both tests is <br>
+        <input type="radio" name="q44">\(84\)<br>
+        <input type="radio" name="q44">\(88\)<br>
+        <input type="radio" name="q44" class="ans">\(90\)<br>
+        <input type="radio" name="q44">\(94\)<br>
+    </div></li>
+    <br>
+    <li><div class="container">
+        It is given that \(n\) is a positive integer. Let \(u_1\), \(v_1\) and \(w_1\) be the standard deviation, the mean and the range of the group of the numbers \(\{15-7n,\,53-7n,\,56-7n,\,59-7n,\,97-7n \}\) respectively while \(u_2\), \(v_2\) and \(w_2\) be the standard deviation, the mean and the range of the group of the numbers \(\{15-8n,\,53-2n,\,56-14n,\,59-7n,\,97-9n \}\) respectively. Which of the following must be true? <br>
+        <ol type="I" class="roman">
+            <li>\(v_1 > v_2\)</li>
+            <li>\(w_1 < w_2\)</li>
+            <li>\(u_1 < u_2\)</li>
+        </ol>
+        <input type="radio" name="q45" class="ans">I only<br>
+        <input type="radio" name="q45">II only<br>
+        <input type="radio" name="q45">I and III only<br>
+        <input type="radio" name="q45">II and III only<br>
+    </div></li>
+    <br>
+
+    </ol>
+    <button style="margin-right: 15px; width: 70px;" onclick="prev()">Previous</button> <button style="margin-right: 15px; width: 70px;" disabled>Next</button> <button style="width: 70px;" onclick="submit()">Submit</button>
+</div>
+
+<div id="bottom">
+</div>
 
     <script src="index.js"></script>
 </body>

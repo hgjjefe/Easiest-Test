@@ -8,6 +8,25 @@
     margin-top: 20px;
 
 }
+#page0{
+    display: none;
+}
+#page1{
+    display: none;
+}
+#page2{
+    display: none;
+}
+#page3{
+    display: none;
+}
+#page4{
+    display: none;
+}
+#page5{
+    display: none;
+}
+
 input[type="radio"] {
     transform: scale(1.5);
     margin-right: 15px; /* Optional: Add some spacing between the radio button and the label */
@@ -17,4 +36,8 @@ button{
     margin-left: 30px;
     margin-bottom: 20px;
     transform: scale(1.5);
+}
+
+.roman > * {
+    margin-top: 5px;
 }
